@@ -38,6 +38,30 @@ A compact, end-to-end demo that finds the profit-maximizing price for a product 
 
 ---
 
+## Tools & Visuals
+
+Here are the main tools and libraries used in this project — visually highlighted so you can quickly show stakeholders the tech stack.
+
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" />
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white" />
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white" />
+  <img alt="pandas" src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white" />
+  <img alt="uvicorn" src="https://img.shields.io/badge/uvicorn-7A61FF?logo=python&logoColor=white" />
+  <img alt="ngrok" src="https://img.shields.io/badge/ngrok-14A0E2?logo=ngrok&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI logo" width="140" style="margin:12px;" />
+  <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit logo" width="90" style="margin:12px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" alt="Python logo" width="70" style="margin:12px;" />
+</p>
+
+You can use these visuals in client decks to quickly communicate the architecture: a Python ML model exported to a lightweight FastAPI service, with an interactive Streamlit front-end for demos.
+
+---
+
 ## Quick start (local)
 
 These steps assume you are on macOS (zsh) and using the included virtual environment at `.venv`. Adjust commands for your environment if different.
