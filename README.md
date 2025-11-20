@@ -182,47 +182,6 @@ print(resp.status_code, resp.json())
 
 ---
 
-## Sharing with a client (quick public demo)
-
-If you want to show the Streamlit dashboard to a client without deploying, use `ngrok` to expose the local port.
-
-1) Install `ngrok` (macOS):
-
-```bash
-brew install --cask ngrok
-```
-
-2) Start Streamlit locally (port 8501), then run:
-
-```bash
-ngrok http 8501
-```
-
-3) Share the `https://...ngrok.io` address shown by `ngrok` with your client. Note: ngrok free plans sleep sessions after some time.
-
-Security note: only expose demo data or anonymized samples when using public tunnels.
-
----
-
-## Troubleshooting
-
-- Streamlit command not found: ensure the venv is activated or use `python -m streamlit run app.py`.
-- API 422 errors: verify you send the correct field names expected by `api.py` (`comp1`, `comp2`, `comp3`, `score`, `customers`).
-- API 500 / non-finite errors: check input values (no negative competitor prices) and review console logs. API includes checks and returns clear `{"error": "..."}` messages on bad inputs.
-- Socket/port in use: if port 8001 or 8501 is busy, change the 
-port when launching (`--port <N>` for uvicorn or `streamlit run app.py --server.port <N>`).
-
----
-
-## Next steps (recommended)
-
-- Add a pinned `requirements.txt` or `pyproject.toml` for reproducible installs.
-- Add a small `launcher.sh` that activates venv and runs both API and Streamlit (for demo convenience).
-- Add unit tests for the API (`pytest`) covering at least: normal case, zero-cost edge case, and invalid payload.
-- Consider Dockerizing the stack if you want an easily-shareable, reproducible demo.
-
----
-
 ## Credits & License
 
 Created for a client demo. Feel free to adapt the UI and model exports for your use. Add a LICENSE file if you plan to share publicly.
