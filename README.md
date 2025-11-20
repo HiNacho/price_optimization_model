@@ -228,11 +228,3 @@ port when launching (`--port <N>` for uvicorn or `streamlit run app.py --server.
 Created for a client demo. Feel free to adapt the UI and model exports for your use. Add a LICENSE file if you plan to share publicly.
 
 ---
-
-If you'd like, I can:
-- create `requirements.txt` and a `launcher.sh` script,
-- add a small `README` section for the model interpretability notes,
-- or generate a shareable ngrok tutorial with screenshots.
-
-
-Which of those would you like next?
